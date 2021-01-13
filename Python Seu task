@@ -1,0 +1,81 @@
+#task 1
+
+#devloped by bandar
+#this code to provaid sum of two numbers
+print ("Welcome\n")
+num1 = float(input("Please enter the first number "))
+num2 = float(input("Please enter the secand number "))
+print ("Total is =" , (num1 + num2))
+
+#END
+
+
+
+
+
+--------------------------------------------------------------
+#task 2
+
+#devloped by bandar
+#this code is Guessing game (computer generate random number from 0 to 10, ask user the required number of trials, if the user enter 0, they the program generate random number of trials)
+
+import random as rand
+Otrail = rand.randrange(0,10)
+num = rand.randint(1,10)
+guess = 0
+trail = 0
+print("welcome\n")
+trail = int(input("Enter your number of trail, or 0 to auto genarate"))
+if trail == 0 :
+  trail = Otrail
+
+while trail != 0 :
+  trail -= 1
+
+  guess = int(input("Enter integr number from 1 into 10"))
+
+  if num < guess:
+    print("high,  you have",trail,"trails.  try again,,")
+  elif num > guess :
+    print ("low, you have", trail, "trails.  try again,,")
+  elif num == guess :
+    print("you guessed it")
+if trail==0 :
+  print("you don't have enough trail")
+
+#END
+
+
+
+--------------------------------------------------------------
+#task 3
+
+#devloped by bandar
+#this code to Print the word PYTHON one hundred times without using loops
+
+print("Python\n"*100)
+
+#END
+
+
+
+
+
+--------------------------------------------------------------
+#task 4
+
+#devloped by bandar
+#this code to drow by turtle
+
+import turtle
+turtle.shape("turtle")
+turtle.speed(100)
+scale = 0
+for each in range(60):
+  scale += 5
+  for i in range(4):
+    turtle.forward(10+scale)
+    turtle.right(90)
+  turtle.right(5)
+
+#END
